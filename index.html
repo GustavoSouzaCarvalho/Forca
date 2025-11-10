@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Adivinhe</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="src/header.css" />
+</head>
+
+<body>
+  <div id="root">
+    <header class="logo-container">
+      <img src="./src/assets/logo.png" alt="Logo Adivinhe" class="logo" width="310" height="60">
+    </header>
+
+    <main class="game-container">
+      <div class="attempts">
+        <span class="attempts-text">5 de 10 tentativas</span>
+        <img src="./src/assets/restart.svg" alt="Recarregar" class="reload-icon" width="32" height="32">
+      </div>
+
+      <div class="hint-box">
+        <img src="./src/assets/tip.svg" alt="Dica" class="lamp-icon" width="32" height="32">
+        <div class="hint-content">
+          <h3 class="hint-title">Dica</h3>
+          <p class="hint-description">Biblioteca para criar interfaces Web com Javascript.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
