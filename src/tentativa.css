@@ -1,0 +1,25 @@
+.tentativas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+.tentativas-texto {
+  font-size: 18px;
+}
+
+.tentativas-atual {
+  font-size: 20px;
+  color: #E8891C;
+  font-weight: bold;
+}
+
+.reload-icon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}

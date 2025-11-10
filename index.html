@@ -11,30 +11,39 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <title>Adivinhe</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="src/header.css" />
+
+  <!-- Importação dos CSS por componente -->
+  <link rel="stylesheet" href="./src/dica.css" />
+  <link rel="stylesheet" href="./src/global.css" />
+  <link rel="stylesheet" href="./src/header.css" />
+  <link rel="stylesheet" href="./src/tentativa.css" />
 </head>
 
 <body>
-  <div id="root">
-    <header class="logo-container">
-      <img src="./src/assets/logo.png" alt="Logo Adivinhe" class="logo" width="310" height="60">
-    </header>
+  <div class="app-container">
+    <div id="root">
+      <!-- HEADER: Logo -->
+      <header class="header">
+        <img src="./src/assets/logo.png" alt="Logo Adivinhe" class="logo" width="310" height="60">
+      </header>
 
-    <main class="game-container">
-      <div class="attempts">
-        <span class="attempts-text">5 de 10 tentativas</span>
+      <!-- TENTATIVAS -->
+      <div class="tentativas">
+        <span class="tentativas-texto">
+          <span class="tentativas-atual">5</span> de 10 tentativas
+        </span>
         <img src="./src/assets/restart.svg" alt="Recarregar" class="reload-icon" width="32" height="32">
       </div>
 
-      <div class="hint-box">
+      <!-- DICA -->
+      <div class="dica">
         <img src="./src/assets/tip.svg" alt="Dica" class="lamp-icon" width="32" height="32">
-        <div class="hint-content">
-          <h3 class="hint-title">Dica</h3>
-          <p class="hint-description">Biblioteca para criar interfaces Web com Javascript.</p>
+        <div class="dica-conteudo">
+          <h3 class="dica-titulo">Dica</h3>
+          <p class="dica-descricao">Biblioteca para criar interfaces Web com Javascript.</p>
         </div>
       </div>
-    </main>
+    </div>
   </div>
 
   <script type="module" src="/src/main.tsx"></script>
