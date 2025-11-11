@@ -1,8 +1,8 @@
 .logo {
-  width: 200px; /* tamanho ajustável */
+  width: 200px; 
   height: auto;
   display: block;
-  margin: 0 auto 20px; /* centraliza e dá espaço abaixo */
+  margin: 0 auto 20px; 
 }
 
 .restartButton {

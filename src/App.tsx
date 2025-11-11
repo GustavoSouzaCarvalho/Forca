@@ -61,7 +61,7 @@ function handleGuess(e: React.FormEvent) {
     //Verifica se todas as letras foram reveladas (vitória)
     const allRevealed = newRevealed.every(Boolean);
    if (allRevealed) {
-  setUsedLetters([]); // 🔹 limpa imediatamente
+  setUsedLetters([]); //  limpa imediatamente
   setTimeout(() => {
     setChallenge(getRandomWord());
     setAttempts(MAX_ATTEMPTS);
@@ -75,7 +75,7 @@ function handleGuess(e: React.FormEvent) {
     setAttempts((prev) => {
       const newAttempts = prev - 1;
 if (newAttempts <= 0) {
-  setUsedLetters([]); // 🔹 limpa imediatamente
+  setUsedLetters([]); //  limpa imediatamente
   setTimeout(() => {
     setChallenge(getRandomWord());
     setAttempts(MAX_ATTEMPTS);
@@ -145,7 +145,7 @@ function restartGame() {
 
         {allRevealed && (
           <div className={styles.winMessage}>
-            🎉 Parabéns! A palavra era <strong>{challenge.word}</strong>
+            Parabéns! A palavra era <strong>{challenge.word}</strong>
           </div>
         )}
 
