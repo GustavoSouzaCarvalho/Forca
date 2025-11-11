@@ -1,0 +1,14 @@
+.wordBox {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.letter {
+  font-size: 32px;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  width: 30px;
+  text-align: center;
+}

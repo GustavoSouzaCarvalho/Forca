@@ -1,0 +1,28 @@
+.container {
+  margin-top: 20px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.letter {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.correct {
+  background-color: #a7f3d0;
+}
+
+.wrong {
+  background-color: #fef3c7;
+}
+
+.empty {
+  color: #777;
+}
